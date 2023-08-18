@@ -1,0 +1,77 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Play Computer</title>
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="timer.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="head">Chess</h1>
+        <h3 class="head">Created by: Yehonatan Medina</h3>
+    </header>
+    <main>
+        <h2>Pass And Play:</h2>
+        <form id="form-user" action="#" method="post">
+            
+            <div class="form-box" data-errormsg="">
+                <label for="input-time">Sellect Time (min):</label>
+                <select id="input-time" tabindex="4">
+                    <option value="03">3</option>
+                    <option value="05">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+            <div class="form-box">
+                <button type="reset" id="button-cancel">Reset Options</button>
+                <button id="button-send">Play!</button>
+            </div>
+        </form>
+        <div id="game-result"></div>
+
+        <div id="fff"></div>
+
+
+        <div id="timer" class="canNotSee" class="player">
+            <div class="player__tile player-1">
+                <div class="player__digits">
+                    <span id="min1">3</span>:<span id="sec1">00</span>
+                </div>
+            </div>
+
+            <div class="player__tile player-2">
+                <div class="player__digits">
+                    <span id="min2">3</span>:<span id="sec2">00</span>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="timer__buttons">
+            <button class="timer__start-bttn bttn" type="button">START</button>
+            <button class="timer__reset-bttn bttn" type="button">RESET</button>
+        </div>
+
+
+
+        <form method="get" action="main.html">
+            <button id="manuBotton" type="submit">Home Page</button>
+        </form>
+    </main>
+    <footer>
+        <img src="pictures/black_bishop.png">
+    </footer>
+    <script src="userPlay.js"></script>
+    <script src="forms.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
